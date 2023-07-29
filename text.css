@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Header Styles */
+header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  font-size: 18px;
+}
+
+/* Main Styles */
+main {
+  padding: 50px;
+}
+
+.split-screen {
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.right {
+  flex: 1;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.mosaic-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mosaic-item {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.mosaic-item:last-child {
+  margin-right: 0;
+}
+
+.mosaic-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Contact Form Styles */
+form label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+form input[type="submit"] {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #004c99;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.scrolling-quotes {
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.scrolling-quotes ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  animation: scroll 20s linear infinite;
+}
+
+.scrolling-quotes li {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 18px;
+  font-style: italic;
+  color: #fff;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.projects-section {
+  width: 80%;
+  margin: auto;
+}
+
+.project {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project p {
+  color: #777;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.project ul {
+  padding-left: 20px;
+}
+
+.project ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
